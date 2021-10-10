@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>The Community Science Museum</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link rel="stylesheet" href="css/style.css" />
+
+<body id="top">
+    <div class="wrapper">
+        <div class="content topnav">
+          <a href="index.html" id="logosite">The Community Science Museum</a>
+          <div id="home">
+            <a class="nav-item" href="./index.html">HOME</a>
+            <a class="nav-item" href="./collections.html">COLLECTIONS</a>
+            <a class="nav-item" href="./contactus.html">CONTACT US</a>
+            <a class="nav-item active" href="./visitus.html">VISIT US</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    <!-- Page content -->
+    <div class="main-content"><div class="visit-container">
+        <h2>Location</h2>
+        <ul>
+            <li>Kirkeveien 4</li>
+            <li>4631 Kristiansand S</li>
+            <li>Norway</li>
+            <li>phone number: 111 22 44</li>
+            <li>sciemue@kris.no</li>
+        </ul>
+    </div>
+    <div class="visit-container">
+        <h2>Hours</h2>
+        <div lass="hours">
+            <ul class="hours">
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+                <li>Sunday</li>
+            </ul>
+            <ul class="hours">
+                <li>09:30-17-00</li>
+                <li>09:30-17-00</li>
+                <li>09:30-17-00</li>
+                <li>09:30-17-00</li>
+                <li>09:30-17-00</li>
+                <li>10:30-14-00</li>
+                <li>Closed</li>
+            </ul>
+        </div>
+    </div>
+    <div class="visit-container">
+        <h2>Admission</h2>
+        <div class="visitus-p">
+            <ul>
+                <li>Adults: 150 NOK</li>
+                <li>Children (3-15): 100 NOK</li>
+                <li>Children (under 12 months): Free</li>
+                <li>Members: Free</li>
+            </ul>
+        </div>
+    </div>
+    <div class="visit-container">
+        <h2>Food & Drink</h2>
+        <div class="visitus-p">
+            <p>
+                We have a cafe inside the museum with wide range of options. From
+                light lunches and snacks to cold and warm drinks. With fair prices.
+            </p>
+        </div>
+    </div>
+    <div class="visit-container">
+    
+        <h2>Shop</h2>
+        <div class="visitus-p">
+            <p>
+                The museum has a shop with lots of memorabilia from the musuem. We
+                have activity packs in the shop also, so you can keep exploring
+                science even after leaving the museum. Not to forget the wide range
+                of gift options.
+            </p>
+        </div>
+    </div>
+    <div class="visit-container">
+        <h2>Accessibility</h2>
+        <div class="visitus-p">
+            <p>
+                The museum has braille display signs and audio guides for the
+                visually impaired. The entire building is desiged the way that is
+                easy to og through with wheelchair.
+            </p>
+        </div></div>
+        </div>
+    </body>
+    <!-- End page content -->
+    <div class="contactus">
+        <a class="contact-us" href="contactus.html">CONTACT US</a>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-icons">
+            <ul class="fa-ul">
+                <li class="fa-li">
+                    <a href="#"><img src="img/icons/twitter.png" class="fab fa-twitter" alt="twitter"></i></a>
+                </li>
+                <li class="fa-li">
+                    <a href="#"><img src="img/icons/instagram.png" alt="instagram"></a>
+                </li>
+                <li class="fa-li">
+                    <a href="#"><img src="img/icons/facebook.png" alt="facebook"></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="copyright">
+                ©The Community Science Museum 2021 | all rights reserved.
+            </p>
+            <div class="terms-privacy">
+                <a href="#"> Terms of Service</a>
+                |
+                <a href="#"> Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function menu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

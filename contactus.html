@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>The Community Science Museum</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link rel="stylesheet" href="css/style.css" />
+
+<body id="top">
+    <div class="wrapper">
+        <div class="content topnav">
+            <a href="index.html" id="logosite">The Community Science Museum</a>
+            <div id="home">
+            <a class="nav-item" href="./index.html">HOME</a>
+            <a class="nav-item" href="./collections.html">COLLECTIONS</a>
+            <a class="nav-item active" href="./contactus.html">CONTACT US</a>
+            <a class="nav-item" href="./visitus.html">VISIT US</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </div>
+    <!-- Page content -->
+    <main class="contact-form">
+        <h1 class="contact-t">Contact Us</h1>
+        <div id="form-errors"></div>
+        <form class="contact-form content" id="form">
+            <div class="success" id="success"></div>
+            <div class="input-container">
+                <label class="form-option" for="">Full name</label>
+                <input id="fullName" type="text" name="name" class="input">
+                <div class="error" id="fullNameError"></div>
+            </div>
+            <div class="input-container">
+                <label class="form-option" for="">Email</label>
+                <input id="email" name="email" class="input">
+                <div class="error" id="emailError"></div>
+            </div>
+            <div">
+                <label class="form-option" for="">Message</label>
+                <textarea id="message" name="message" class="input"></textarea>
+                <div class="error" id="messageError"></div>
+                </div>
+                <input type="submit" value="send" class="contact-form-btn ">
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-icons">
+            <ul class="fa-ul">
+                <li class="fa-li">
+                    <a href="#"><img src="img/icons/twitter.png" class="fab fa-twitter" alt="twitter"></i></a>
+                </li>
+                <li class="fa-li">
+                    <a href="#"><img src="img/icons/instagram.png" alt="instagram"></a>
+                </li>
+                <li class="fa-li">
+                    <a href="#"><img src="img/icons/facebook.png" alt="facebook"></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="copyright">
+                ©The Community Science Museum 2021 | all rights reserved.
+            </p>
+            <div class="terms-privacy">
+                <a href="#"> Terms of Service</a>
+                |
+                <a href="#"> Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function menu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="js/nav.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

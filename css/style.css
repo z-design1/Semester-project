@@ -1,0 +1,525 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #6d7aa3;
+}
+html,
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+}
+h1 {
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 28px;
+}
+h2 {
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 24px;
+}
+
+.serif {
+  font-family: serif;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.cursive {
+  font-family: cursive;
+}
+.image {
+  margin: 0px;
+  max-width: 100%;
+  height: auto;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: inherit;
+}
+.btn,
+.button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.responsive {
+  display: none;
+  overflow-x: auto;
+}
+p {
+  line-height: 25px;
+}
+/* Nav */
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #home {
+  display: none;
+}
+
+.topnav a {
+  color: rgb(0, 0, 0);
+  padding: 14px 1%;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+
+.topnav a.icon {
+  color: #222633;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 14px 2% !important;
+}
+
+.topnav a:hover {
+  background-color: #51c1e9;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #51c1e9;
+  color: white;
+}
+.nav-item {
+  float: left;
+  text-align: center;
+  padding: 14px 1%;
+  text-decoration: none;
+  display: none;
+}
+#logosite:hover {
+  color: #6d7aa3;
+  background-color: transparent;
+}
+.wrapper {
+  background-color: #d5e3f9;
+  border-bottom: 2px solid rgb(81, 193, 233);
+}
+/* Home */
+.container {
+  padding: 0.01em 16px;
+}
+.image-home {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px 4px 0 0;
+}
+.p-home {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content,
+.auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.content {
+  max-width: 1600px;
+}
+.home-content {
+  display: grid;
+  padding: 10px;
+}
+.home-container {
+  margin: 5%;
+  padding: 2%;
+  border: solid 2px #222633;
+  background-color: white;
+  border-radius: 4px;
+  max-width: 300px;
+}
+.main-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* Collection*/
+.card-style {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  background-color: #fff;
+  padding: 8px;
+  margin: 4%;
+}
+.card-content {
+  margin: 0;
+  padding: 14px;
+}
+.p-collection {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+.top-container {
+  background-color: #51c1e9;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 12px;
+  margin: 30px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+}
+.top {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Gemunu Libre", sans-serif;
+  letter-spacing: 2px;
+}
+.divider {
+  color: #51c1e9;
+  font-weight: 900;
+}
+.collection-link-container {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  background-color: #fff;
+  padding: 8px;
+  margin: 4%;
+  visibility: hidden;
+  text-align: center;
+  margin: 20px auto 20px auto;
+  text-align: center;
+}
+.collection-link {
+  text-decoration: none;
+  color: #32374b;
+  font-weight: bold;
+  padding: 7px;
+  margin: 10px;
+}
+
+/* Visit us*/
+.visit-container {
+  margin: 5%;
+  padding: 2%;
+  border: solid 2px #222633;
+  background-color: white;
+  border-radius: 4px;
+}
+.main-content {
+  display: grid;
+  padding: 10px;
+}
+.hours {
+  display: inline-block;
+  justify-content: space-between;
+  list-style: none;
+  padding: 5px;
+  min-width: 100px;
+}
+
+/* Contact us */
+.contact-us {
+  text-decoration: none;
+  color: #fff;
+  background-color: #51c1e9;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  margin: 0 0 30px 0;
+  width: 170px;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 15px;
+  margin: 30px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  font-family: "Gemunu Libre", sans-serif;
+  letter-spacing: 3px;
+}
+.contact-us:hover {
+  background-color: #51c1e9;
+  color: #ddd;
+}
+.contactus {
+  text-align: center;
+}
+.wrap-input {
+  padding: 5px;
+  margin: 10px;
+  align-items: center;
+}
+
+.contact-form-btn {
+  border-radius: 4px;
+  border: 1px solid #51c1e9;
+  background-color: #51c1e9;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+}
+.container-contact-form-btn {
+  margin-left: 13px;
+}
+input[type="text"],
+textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  line-height: 1.3rem;
+  margin-top: 5px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+}
+.form-option {
+  color: #777;
+}
+.contact-us-title {
+  margin-left: 15px;
+  color: #5d5d5d;
+}
+textarea {
+  resize: vertical;
+  overflow: auto;
+}
+form {
+  padding: 5px;
+  margin: 10px;
+  align-items: center;
+}
+.contact-form {
+  background-color: #d5e3f9;
+  border: 2px solid #222633;
+  max-width: 750px;
+  margin: 10% 4% 20% 4%;
+  padding: 15px;
+}
+.input,
+#fullName {
+  border: 2px solid #222633;
+  border-radius: 4px;
+  line-height: 1.3rem;
+  margin: 10px 0px 10px 0px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+}
+.form-option {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #222633;
+  font-weight: 700;
+}
+.contact-t {
+  text-align: center;
+}
+.btn {
+  color: #51c1e9;
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
+  padding: 8px;
+  margin: 30px;
+  font-size: 16px;
+  width: 100px;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+}
+#form-errors {
+  color: rgb(216, 81, 81);
+  font-family: "Raleway", sans-serif;
+  font-size: larger;
+  padding: 10px 30px;
+}
+.success {
+  background-color: #51c1e9;
+  font-size: 2rem;
+  color: #222633;
+  text-align: center;
+  border-left: #222633 solid 2px;
+  margin: 20px;
+  animation-name: success;
+  animation-duration: 0.5s;
+}
+
+/* footer */
+footer {
+  padding: 5px;
+  width: 100%;
+  background-color: #1c202c;
+  color: #cbebf7;
+  position: relative;
+  border-top: 2px solid #51c1e9;
+}
+.fa-ul {
+  display: flex;
+  justify-content: center;
+}
+.fa-li {
+  font-size: 25px;
+}
+footer ul li a:link,
+footer ul li a:visited {
+  color: #51c1e9;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 10px;
+}
+.copyright {
+  text-align: center;
+}
+.terms-privacy {
+  padding-bottom: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #cbebf7;
+}
+.terms-privacy a:link,
+.terms-privacy a:visited {
+  color: #cbebf7;
+  text-decoration: none;
+}
+
+/* Media queries*/
+@media screen and (min-width: 350px) {
+  .home-container {
+    margin: 1rem 2rem;
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .home-content {
+    margin: 1rem 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 800px) {
+  .home-content {
+    grid-gap: 20px;
+  }
+  .home-container {
+    margin: 1rem;
+    align-items: center;
+  }
+  .contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .nav-item {
+    float: unset !important;
+  }
+  #logosite {
+    font-family: "Gemunu Libre", sans-serif !important;
+    font-size: 23px;
+    border-bottom: 1px solid #51c1e9;
+  }
+  .topnav a{
+    padding: 10px 1% !important;
+  }
+}
+@media screen and (min-width: 850px) {
+  .nav-item {
+    float: left !important;
+  }
+  .icon {
+    visibility: hidden;
+  }
+  #logosite {
+    font-family: "Gemunu Libre", sans-serif !important;
+    font-size: 23px;
+    float: right;
+    color: #222633;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .topnav #home {
+    display: none;
+  }
+}
+@media screen and (min-width: 851px) {
+  .topnav #home {
+    display: block !important;
+  }
+}
+@media (min-width: 993px) {
+  .topnav #home {
+    display: block !important;
+  }
+  .modal-content {
+    width: 900px;
+  }
+  .hide-large {
+    display: none !important;
+  }
+  .sidebar.collapse {
+    display: block !important;
+  }
+  .row-padding {
+    margin: 3rem;
+  }
+  .main-content {
+    padding: 0;
+    margin: 0 4rem 4rem 4rem;
+    grid-template-columns: auto auto auto;
+  }
+  .home-content {
+    margin: 3rem 1rem 3rem 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .nav-item {
+    font-size: 40px;
+  }
+  .topnav{
+    justify-content: space-between;
+  }
+  .collection-link-container {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1100px) {
+  .row-padding {
+    margin: 5rem;
+  }
+  .p-collection {
+    font-size: larger;
+    line-height: 30px;
+  }
+  h1 {
+    font-family: "Gemunu Libre", sans-serif;
+    font-size: 30px;
+  }
+  .main-content{
+    margin: 5rem;
+  }
+}
+
